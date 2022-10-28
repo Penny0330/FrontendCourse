@@ -1,0 +1,108 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrap{
+    margin: auto;
+    margin-top: 80px;
+    width: 900px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #afcfc2;
+    padding: 50px;
+}
+
+h1, h2{
+    color: rgb(112, 107, 107);
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 60px;
+}
+
+.con{
+    margin-top: 20px;
+}
+
+.con a{
+    text-decoration: none;
+    font-size: 24px;
+    margin: 20px;
+    color: rgb(84, 80, 80);
+}
+
+.con a:hover{
+    color: white;
+}
+
+.con i{
+    background-color: white;
+    color: #afcfc2;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.icon{
+    margin-top: 15px;
+}
+
+.icon i{
+    margin: 20px;
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.icon i:hover{
+    color: white;
+}
+
+.github, .email, .facebook{
+    color:  rgb(112, 107, 107);
+}
+
+.right{
+    align-self: center;
+}
+
+.right img{
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .wrap{
+        width: 85%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .left{
+        text-align: center;
+    }
+
+    .con{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .icon{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right img{
+        min-width: 100%;
+    }
+
+    .icon i{
+        font-size: 50px;
+    }
+}
