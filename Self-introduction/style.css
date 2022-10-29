@@ -1,39 +1,59 @@
-
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .wrap{
+    width: 70%;
     margin: auto;
-    margin-top: 80px;
-    width: 900px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #afcfc2;
+    margin-top: 8%;
     padding: 50px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    background-color: #afcfc2;
+
 }
 
-h1, h2{
+.left{
+    grid-column: 1/2;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-areas: 
+    "text"
+    "con"
+    "icon";
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    margin-right: 60px;
+}
+
+.text{
+    grid-area: text;
+    line-height: 55px;
     color: rgb(112, 107, 107);
 }
 
+.hello{
+    margin-right: 20px;
+}
 
-.left{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 60px;
+.bear{
+    vertical-align: middle;
+    width: 75px;
+    /* margin-right: 25px; */
 }
 
 .con{
-    margin-top: 20px;
+    grid-area: con;
+    font-size: 24px;
 }
 
 .con a{
     text-decoration: none;
-    font-size: 24px;
-    margin: 20px;
+    margin: 10px;
     color: rgb(84, 80, 80);
 }
 
@@ -49,60 +69,46 @@ h1, h2{
 }
 
 .icon{
-    margin-top: 15px;
+    grid-area: icon;
+
+}
+
+.icon a{
+    font-size: 32px;
+    margin: 0 35px;
 }
 
 .icon i{
-    margin: 20px;
-    font-size: 40px;
-    vertical-align: middle;
+    color: rgb(112, 107, 107);
 }
 
 .icon i:hover{
     color: white;
 }
 
-.github, .email, .facebook{
-    color:  rgb(112, 107, 107);
-}
-
-.right{
-    align-self: center;
-}
-
-.right img{
-    max-width: 100%;
-}
 
 @media (max-width: 768px) {
     .wrap{
-        width: 85%;
-        flex-wrap: wrap;
-        flex-direction: column;
+        width: 100%;
+        grid-template-columns: 1fr;
+        text-align: center;
         margin: 0;
-        font-size: 20px;
     }
 
     .left{
-        text-align: center;
+        margin: 0;
+        grid-template-rows: 2fr 1fr 1fr;
     }
 
     .con{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
-    .icon{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .right img{
-        min-width: 100%;
-    }
-
-    .icon i{
-        font-size: 50px;
+    .icon a{
+        margin: 0 15px;
     }
 }
+
+
