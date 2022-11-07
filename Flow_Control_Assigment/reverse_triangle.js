@@ -14,4 +14,14 @@ function reverseTriangle(size){
     console.log(star);
 };
 
-reverseTriangle(20);
+reverseTriangle(5);
+
+/*
+
+*****
+ ****
+  ***
+   **
+    *
+
+*/
