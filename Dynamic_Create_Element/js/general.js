@@ -112,22 +112,42 @@ export const skill = () => {
     fa_caret_down .setAttribute("class", "fa-solid fa-caret-down caret-down");
     following.appendChild(fa_caret_down);
 
-    // Message
+    // message
     let message = document.createElement("div");
     message.setAttribute("class", "message");
     message.innerHTML ="Message";
     follow.appendChild(message);
 
-    // 
-    let more = document.createElement("div");
-    more.setAttribute("class", "more");
-    follow.appendChild(more);
+    // add
+    let add = document.createElement("div");
+    add.setAttribute("class", "add");
+    follow.appendChild(add);
 
     let fa_user_plus = document.createElement("i");
     fa_user_plus.setAttribute("class", "fa-solid fa-user-plus");
-    more.appendChild(fa_user_plus);
+    add.appendChild(fa_user_plus);
+
+    // create div "cells_play"
+    let cells_play = document.createElement("div");
+    cells_play.setAttribute("class", "cells_play");
+    header.appendChild(cells_play);
+
+    // cells
+    let fa_table_cells = document.createElement("i");
+    fa_table_cells.setAttribute("class", "fa-solid fa-table-cells");
+    cells_play.appendChild(fa_table_cells);
+
+    // play
+    let fa_play = document.createElement("i");
+    fa_play.setAttribute("class", "fa-solid fa-play");
+    cells_play.appendChild(fa_play);
 
     // hr
     let hr = document.createElement("hr");
     header.appendChild(hr);
+
+    fa_table_cells.addEventListener("click", (e)=>{
+        console.log(e.target);
+    })
 };
+
