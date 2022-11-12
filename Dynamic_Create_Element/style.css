@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgba(6, 6, 6, 0.8);
+}
+
+.wrapper{
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 20px;
+    background-color: white;
+}
+
+header{
+    border: 2px solid gray;
+    border-bottom: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 20px 20px;
+}
+
+.fa-arrow-left{
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.about .pic{
+    border-radius: 50%;
+    border: 8px double rgb(196, 191, 191);
+}
+
+.about .count{
+    display: flex;
+    text-align: center;
+}
+
+.about .count p{
+    font-weight: bold;
+    padding: 10px 0 10px 35px;
+}
+
+.skill{
+    font-style: italic;
+    line-height: 30px;
+    padding: 25px 0 25px 40px;
+}
+
+.fa-computer{
+    color: rgb(97, 149, 215);
+    margin-right: 8px;
+}
+
+.follow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    text-align: center;
+    
+}
+
+.following, .message{
+    padding: 5px 60px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px rgba(104, 104, 104, 0.4);
+    cursor: pointer;
+}
+
+.caret-down{
+    padding-left: 8px;
+}
+
+.more{
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px rgba(104, 104, 104, 0.4);
+    cursor: pointer;
+}
+
+hr{
+    margin: 10px auto 0 auto;
+    max-width: 610px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 10px;
+
+    border: 2px solid gray;
+    border-top: none;
+}
+
+.post{
+    margin:0 5px 5px 5px;
+    max-width: 170px;
+}
+
+.post img{
+    width: 100%;
+    box-shadow: 0px 1px 5px rgba(104, 104, 104, 0.4);
+}
+
+@media (max-width: 1200px) {
+    .wrapper{
+        margin: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper{
+        font-size: 15px;
+    }
+    .pic{
+        width: 70px;
+        margin-bottom: 10px;
+    }
+    .about .count p{
+        padding: 10px 5px;
+    }
+    .following, .message{
+        padding: 3px 30px;
+    }
+    main{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .wrapper{
+        font-size: 12px;
+    }
+    .pic{
+        width: 60px;
+    }
+    .following, .message{
+        padding: 3px 10px;
+    }
+}
