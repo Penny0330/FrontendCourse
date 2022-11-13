@@ -8,7 +8,7 @@ export const nav = () => {
     nav.setAttribute("class", "nav");
     header.appendChild(nav);
 
-    // create "<- __Penny__"
+    // create "<- __Polar_Bear__"
     let nav_left = document.createElement("div");
     nav_left.setAttribute("class", "nav_left");
     nav.appendChild(nav_left);
@@ -18,7 +18,7 @@ export const nav = () => {
     nav_left.appendChild(fa_arrow_left);
 
     let username = document.createElement("span");
-    username.innerHTML = "__Penny__";
+    username.innerHTML = "__Polar_Bear__";
     nav_left.appendChild(username);
     
     // create "hamburger"
@@ -73,27 +73,35 @@ export const about = (posts) =>{
     count_fans.appendChild(p_title);
 };
 
-export const skill = () => {
-    // create div "skill"
-    let skill = document.createElement("div");
-    skill.setAttribute("class", "skill");
-    header.appendChild(skill);
+export const info = () => {
+    // create div "info"
+    let info = document.createElement("div");
+    info.setAttribute("class", "info");
+    header.appendChild(info);
 
-    // create h5、Front-end、Back-end
-    let h5 = document.createElement("h5");
-    skill.appendChild(h5);
-    let fa_compute = document.createElement("i");
-    fa_compute.setAttribute("class", "fa-solid fa-computer");
-    h5.appendChild(fa_compute);
-    let text = document.createTextNode("skill : ");
+    // create h5、snowflake
+    var h5 = document.createElement("h5");
+    info.appendChild(h5);
+    let fa_snowflake = document.createElement("i");
+    fa_snowflake.setAttribute("class", "fa-solid fa-snowflake");
+    h5.appendChild(fa_snowflake);
+    var text = document.createTextNode("About : ");
     h5.appendChild(text);
 
-    var p = document.createElement("p");
-    p.innerHTML = "Front-end - HTML、CSS、JavaScript";
-    h5.appendChild(p);
-    var p = document.createElement("p");
-    p.innerHTML = "Back-end - Python(Flask)、MySQL";
-    h5.appendChild(p);
+    // website
+    var a = document.createElement("a");
+    a.href = "https://www.taiwanbear.org.tw/bear/bear/55";
+    a.innerHTML = "Click Me!";
+    h5.appendChild(a);
+
+    // food : seal
+    var h5 = document.createElement("h5");
+    info.appendChild(h5);
+    let fa_meat = document.createElement("i");
+    fa_meat.setAttribute("class", "fa-solid fa-fish");
+    h5.appendChild(fa_meat);
+    var text = document.createTextNode("Food : Seal");
+    h5.appendChild(text);
 
     // create div "follow"
     let follow = document.createElement("div");
@@ -142,12 +150,13 @@ export const skill = () => {
     fa_play.setAttribute("class", "fa-solid fa-play");
     cells_play.appendChild(fa_play);
 
+    // tag
+    let fa_user_tag = document.createElement("i");
+    fa_user_tag.setAttribute("class", "fa-solid fa-user-tag");
+    cells_play.appendChild(fa_user_tag);
+
     // hr
     let hr = document.createElement("hr");
     header.appendChild(hr);
-
-    fa_table_cells.addEventListener("click", (e)=>{
-        console.log(e.target);
-    })
 };
 

@@ -7,7 +7,6 @@
 
 body{
     background-color: rgba(6, 6, 6, 0.8);
-    background-color: white;
 }
 
 .wrapper{
@@ -56,15 +55,25 @@ nav{
     padding: 10px 0 10px 35px;
 }
 
-.skill{
+.info{
     font-style: italic;
     line-height: 30px;
     padding: 25px 40px 25px ;
 }
 
-.fa-computer{
+a{
     color: rgb(97, 149, 215);
-    margin-right: 8px;
+    margin-left: 3px;
+    text-decoration: none;
+}
+
+.fa-snowflake, .fa-fish{
+    color: rgb(97, 149, 215);
+    margin-right: 20px;
+}
+
+.fa-meat{
+    font-weight: 900;
 }
 
 .follow{
@@ -74,13 +83,13 @@ nav{
     align-items: center;
     padding: 15px 30px;
     text-align: center;
-    
 }
 
 .following, .message{
     padding: 5px 60px;
     border-radius: 5px;
-    box-shadow: 0px 1px 5px rgba(104, 104, 104, 0.4);
+    box-shadow: 0px 1px 5px rgba(21, 99, 201, 0.6);
+    background-color: rgb(97, 149, 215, 0.5);
     cursor: pointer;
 }
 
@@ -93,6 +102,7 @@ nav{
     border-radius: 5px;
     box-shadow: 0px 1px 5px rgba(104, 104, 104, 0.4);
     cursor: pointer;
+    background-color: rgb(97, 149, 215, 0.3);
 }
 
 .cells_play{
@@ -101,12 +111,12 @@ nav{
     margin-top: 20px;
 }
 
-.fa-table-cells, .fa-play{
+.fa-table-cells, .fa-play, .fa-user-tag{
     cursor: pointer;
 }
 
 hr{
-    margin: 10px auto 0 auto;
+    margin: 10px auto 0;
     max-width: 90%;
 }
 
@@ -146,7 +156,7 @@ main{
     .about .count p{
         padding: 10px 5px;
     }
-    .skill{
+    .info{
         padding: 15px 40px 15px ;
     }
     .following, .message{

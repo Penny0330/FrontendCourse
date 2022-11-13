@@ -1,7 +1,7 @@
 import {post} from "./post.js";
-import {nav, about, skill} from "./general.js";
+import {nav, about, info} from "./general.js";
 
 nav();
 about(9);
-skill();
+info();
 post(9);
